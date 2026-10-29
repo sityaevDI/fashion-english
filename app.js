@@ -535,7 +535,7 @@
       const move = ev => {
         if (!ghost && Math.hypot(ev.clientX - sx, ev.clientY - sy) < 5) return;
         if (!ghost) {
-          ghost = p.chip.cloneNode(true); ghost.classList.add("ghost");
+          ghost = p.chip.cloneNode(true); ghost.classList.add("drag-ghost");
           ghost.style.width = r.width + "px"; document.body.append(ghost);
           p.chip.classList.add("dragging");
         }

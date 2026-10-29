@@ -174,7 +174,7 @@ select.gap { cursor: pointer; }
 .chip { cursor: grab; touch-action: none; }
 .chip.sel { outline: 2px solid var(--ink); }
 .chip.dragging { opacity: .4; }
-.ghost { position: fixed; z-index: 50; pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,.15); cursor: grabbing; }
+.drag-ghost { position: fixed; z-index: 50; pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,.15); cursor: grabbing; }
 .m-row.ok .chip { cursor: default; border-color: var(--ok); color: var(--ok); }
 @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
 
