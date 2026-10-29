@@ -650,7 +650,7 @@
         input.classList.remove("bad"); input.classList.add(ok ? "ok" : "shown");
         blank.textContent = ans; blank.classList.add(ok ? "ok" : "shown");
         hint.textContent = typo ? "Опечатка, но засчитано. Правильно: " + ans : ok ? "" : "Правильный ответ: " + ans;
-        after.append(el("b", null, w.w), audioBtn(w.w), el("span", null, " — " + w.ru), w.note ? el("p", { class: "note" }, w.note) : null);
+        after.append(el("b", null, w.w), audioBtn(w.w), el("span", null, " — " + w.ru), ...(w.note ? [el("p", { class: "note" }, w.note)] : []));
         speak(w.w);
         if (i === cards.length - 1) { btn.remove(); api.complete(); }
         else { btn.textContent = "Следующая карточка →"; btn.disabled = false; btn.focus({ preventScroll: true }); }

@@ -1,4 +1,4 @@
-/* Блок 1. Основы: одежда, крой, детали, ткани. Дни 1–5.
+/* Блок 1. Основы: одежда, крой, детали, ткани. Дни 1–10.
    Слово: w — слово, pos — часть речи, ru — перевод, def — определение на простом английском,
    ex — пример с пропуском ___, exA — форма слова в примере (если отличается), note — важное отличие. */
 
@@ -473,6 +473,476 @@ FE.addDay({
         {
           sentences: ["We are needing a bigger budget.", "Anna is making a mood board now.", "The model tries on the looks every Thursday."],
           err: { s: 0, span: "are needing", fix: ["need"], g: "g02", note: "need — глагол состояния: we need." }
+        }
+      ]
+    }
+  ]
+});
+
+FE.addDay({
+  n: 6,
+  words: [
+    { w: "pattern", pos: "noun", ru: "узор, рисунок", def: "a design of lines, shapes or colours that repeats on fabric", ex: "I love the ___ on your scarf — are those little birds?" },
+    { w: "print", pos: "noun", ru: "принт", def: "a picture or design put on fabric with ink", ex: "The T-shirt has a big ___ of a cat on the front.", note: "pattern — любой повторяющийся рисунок, даже вытканный; print — рисунок, нанесённый краской сверху." },
+    { w: "striped", pos: "adjective", ru: "в полоску", def: "with long thin lines of different colours", ex: "A navy and white ___ top is a classic summer piece." },
+    { w: "checked", pos: "adjective", ru: "в клетку", def: "with a pattern of squares in different colours", ex: "He wore a red ___ shirt with jeans.", note: "checked — британский вариант; в американском чаще plaid или checkered." },
+    { w: "polka dot", pos: "noun", ru: "горошек (узор)", def: "one of many round spots of the same size that make a pattern on fabric", ex: "She wore a red dress with white ___.", exA: "polka dots" },
+    { w: "floral", pos: "adjective", ru: "цветочный, в цветочек", def: "with a pattern of flowers", ex: "A light ___ dress is perfect for a spring wedding." },
+    { w: "animal print", pos: "noun", ru: "животный принт", def: "a pattern that looks like the skin of a leopard, zebra or snake", ex: "Leopard is the most popular ___ in fashion." },
+    { w: "plain", pos: "adjective", ru: "однотонный, без рисунка", def: "in one colour, with no pattern", ex: "Wear a ___ top with a bold skirt — one pattern is enough." },
+    { w: "neutral", pos: "adjective", ru: "нейтральный (о цвете)", def: "not bright: beige, grey, white, black or brown", ex: "___ colours go with almost everything.", exA: "Neutral" },
+    { w: "clash", pos: "verb", ru: "не сочетаться, «спорить» (о цветах)", def: "to look bad together because the colours or patterns are too different", ex: "Your pink bag and orange shoes ___ — try black shoes." }
+  ],
+  ex: [
+    { type: "flash", cards: ["pattern", "print", "striped", "checked", "polka dot"] },
+    {
+      type: "match", title: "Соедини пары",
+      pairs: [
+        ["a leopard", "леопардовый", "print", "принт"],
+        ["polka", "«полька»", "dots", "точки → горошек"],
+        ["clash", "не сочетаться", "with the bag", "с сумкой"],
+        ["neutral", "нейтральные", "tones", "оттенки"],
+        ["mix", "смешивать, сочетать", "prints", "принты"],
+        ["head-to-toe", "с головы до ног", "denim", "деним"]
+      ]
+    },
+    {
+      type: "cloze", mode: "select",
+      text: "Patterns can make or break an outfit. {0} shirts have long thin lines, and {1} skirts have a pattern of squares. {2} dresses with roses or daisies look romantic in spring. If you want to look wild and bold, choose a top in {3}, like leopard or zebra. But be careful: two loud patterns can {4}. That's why stylists often add {5} pieces — in one colour, with no pattern. Beige, grey, white and black are {6} colours: they go with almost everything.",
+      gaps: [
+        { a: "Striped", o: ["Striped", "Checked", "Floral"], why: "«long thin lines» — полоски, striped. checked — клетка, floral — цветы." },
+        { a: "checked", o: ["checked", "striped", "plain"], why: "«a pattern of squares» — клетка, checked." },
+        { a: "Floral", o: ["Floral", "Plain", "Checked"], why: "«with roses or daisies» — рисунок из цветов, floral. Plain — без рисунка вообще." },
+        { a: "animal print", o: ["animal print", "denim", "velvet"], why: "«like leopard or zebra» — животный принт. denim и velvet — ткани, а не рисунок." },
+        { a: "clash", o: ["clash", "fit", "launch"], why: "Два ярких узора рядом «спорят» друг с другом — clash. fit — сидеть по фигуре, launch — запускать." },
+        { a: "plain", o: ["plain", "floral", "checked"], why: "«in one colour, with no pattern» — однотонные, plain." },
+        { a: "neutral", o: ["neutral", "floral", "striped"], why: "Бежевый, серый, белый и чёрный — нейтральные цвета, neutral. floral и striped — это узоры, а не цвета." }
+      ]
+    },
+    {
+      type: "odd",
+      rows: [
+        { w: ["striped", "checked", "plain", "floral"], o: 2, why: "plain — однотонный, без рисунка. Остальные три — узоры." },
+        { w: ["beige", "grey", "neon pink", "white"], o: 2, why: "neon pink — яркий кислотный цвет. Бежевый, серый и белый — нейтральные." },
+        { w: ["leopard", "zebra", "snake", "rose"], o: 3, why: "rose — цветочный рисунок. Леопард, зебра и змея — животные принты." }
+      ]
+    },
+    { type: "flash", cards: ["floral", "animal print", "plain", "neutral", "clash"] },
+    {
+      type: "cloze", mode: "type", title: "Complete the sentences",
+      text: "1. Zebra and leopard patterns are both types of {0}.\n2. This T-shirt has no pattern at all — it is completely {1}.\n3. Orange and pink sometimes {2}, but some designers love this bold mix.\n4. The dress has small white {3} on a navy background.\n5. The T-shirt has a photo of a cat on the front — a funny {4}.",
+      gaps: [
+        { a: "animal print", alt: ["animal prints"], why: "Леопард и зебра — животный принт, animal print." },
+        { a: "plain", why: "Совсем без рисунка — plain." },
+        { a: "clash", why: "Цвета, которые «спорят» друг с другом, — clash." },
+        { a: "polka dots", alt: ["dots"], why: "Маленькие белые кружочки — горошек, polka dots." },
+        { a: "print", why: "Картинка, нанесённая краской на ткань, — print. Это не узор: картинка одна и не повторяется." }
+      ]
+    },
+    {
+      type: "builder", g: "g04",
+      items: [
+        {
+          ctx: "Опиши мудборд: на нём есть несколько фото с животным принтом.",
+          formula: ["There", "is / are", "some / any", "plural noun", "on + place"],
+          parts: ["There", { v: "BE", a: ["are"], f: [1], rule: "Дальше множественное число (photos) → there are." }, { p: ["some", "any", "a"], a: "some", f: [2], rule: "Утвердительное предложение, несколько вещей → some. any — в вопросах и отрицаниях." }, "photos of animal prints on the mood board."]
+        },
+        {
+          ctx: "На рейле нет ни одной рубашки в клетку.",
+          formula: ["There", "isn't / aren't", "any", "plural noun", "on + place"],
+          parts: ["There", { v: "NOT BE", a: ["aren't", "are not"], f: [1], rule: "Отрицание со множественным числом (shirts) → there aren't." }, { p: ["any", "some", "no"], a: "any", f: [2], rule: "В отрицании — any: there aren't any. Двойного отрицания (aren't no) в английском нет." }, "checked shirts on the clothing rail."]
+        },
+        {
+          ctx: "Спроси ассистента, есть ли в коллекции платье в горошек.",
+          formula: ["Is / Are", "there", "a / any", "noun", "in + place?"],
+          parts: [{ v: "BE", a: ["Is"], f: [0], rule: "Вопрос: Is there + одна вещь (a dress), Are there + несколько." }, "there", { p: ["a", "any", "some"], a: "a", f: [2], rule: "Одно платье — a. any ставят перед множественным или неисчисляемым: Are there any dresses?" }, "polka dot dress in the collection?"]
+        }
+      ]
+    },
+    {
+      type: "spot", g: "g04",
+      sets: [
+        {
+          sentences: ["There is some pink and white stripes on this shirt.", "There aren't any floral prints in the catalogue.", "Is there a plain T-shirt on the rail?"],
+          err: { s: 0, span: "is", fix: ["are"], g: "g04", note: "stripes — множественное число, поэтому there are, а не there is." }
+        },
+        {
+          sentences: ["We need some neutral colours for this shoot.", "There aren't some animal prints in the new collection.", "These checked trousers clash with the jacket."],
+          err: { s: 1, span: "some", fix: ["any"], g: "g04", note: "В отрицании нужен any: there aren't any animal prints." }
+        }
+      ]
+    }
+  ]
+});
+
+FE.addDay({
+  n: 7,
+  words: [
+    { w: "accessories", pos: "noun, plural", ru: "аксессуары", def: "small things you wear or carry with your clothes, like bags, belts and jewellery", ex: "The right ___ can change a simple outfit completely." },
+    { w: "jewellery", pos: "noun", ru: "украшения, бижутерия", def: "rings, necklaces, earrings and other things you wear for decoration", ex: "She doesn't wear much ___ — just one gold ring.", note: "jewellery — неисчисляемое: much jewellery, a piece of jewellery, но не jewelleries. В американском английском — jewelry." },
+    { w: "necklace", pos: "noun", ru: "ожерелье, колье, цепочка", def: "a piece of jewellery that you wear around your neck", ex: "A long pearl ___ looks great with a black dress." },
+    { w: "earrings", pos: "noun, plural", ru: "серьги", def: "pieces of jewellery that you wear on your ears", ex: "Big gold ___ make a simple outfit look bright." },
+    { w: "bracelet", pos: "noun", ru: "браслет", def: "a piece of jewellery that you wear around your wrist", ex: "She wears a thin silver ___ on her left wrist." },
+    { w: "scarf", pos: "noun", ru: "шарф, платок", def: "a piece of fabric that you wear around your neck or on your head", ex: "A silk ___ adds colour to a dark coat." },
+    { w: "clutch", pos: "noun", ru: "клатч", def: "a small flat bag with no handle that you hold in your hand", ex: "For the party she took a small gold ___." },
+    { w: "statement piece", pos: "noun", ru: "вещь-акцент, главный акцент образа", def: "one bold, eye-catching item that everyone notices first in an outfit", ex: "The huge red necklace is the ___ of this look.", note: "В образе обычно один statement piece — остальные вещи спокойнее, чтобы не спорить с ним." },
+    { w: "chunky", pos: "adjective", ru: "массивный, крупный", def: "big, thick and heavy-looking", ex: "A ___ necklace makes a plain T-shirt look interesting." },
+    { w: "layer", pos: "verb", ru: "носить слоями, многослойно", def: "to wear several things one on top of another", ex: "Stylists often ___ thin gold necklaces of different lengths." }
+  ],
+  ex: [
+    { type: "flash", cards: ["accessories", "jewellery", "necklace", "earrings", "bracelet"] },
+    {
+      type: "match", title: "Соедини пары",
+      pairs: [
+        ["a pearl", "жемчужное", "necklace", "ожерелье"],
+        ["a silk", "шёлковый", "scarf", "платок"],
+        ["a piece of", "одно (изделие)", "jewellery", "украшение"],
+        ["layer", "носить слоями", "gold chains", "золотые цепочки"],
+        ["hoop", "кольца", "earrings", "серьги-кольца"],
+        ["carry", "держать, носить в руке", "a clutch", "клатч"]
+      ]
+    },
+    {
+      type: "cloze", mode: "select",
+      text: "Accessories can turn a simple outfit into a great look. A stylist usually starts with one {0} — the thing everyone notices first, for example a big {1} necklace. Then the rest of the {2} must be quieter: small gold {3} and one thin {4} on the wrist. For an evening event, the model holds a small {5} instead of a big bag. In autumn, a silk {6} around the neck adds colour to a black coat.",
+      gaps: [
+        { a: "statement piece", o: ["statement piece", "clutch", "scarf"], why: "«the thing everyone notices first» — главный акцент образа, statement piece." },
+        { a: "chunky", o: ["chunky", "knee-length", "boyish"], why: "Большое тяжёлое ожерелье — chunky. knee-length — про длину юбки, boyish — про силуэт." },
+        { a: "jewellery", o: ["jewellery", "denim", "corset"], why: "Дальше перечислены серьги и браслет — это украшения, jewellery." },
+        { a: "earrings", o: ["earrings", "scarves", "clutches"], why: "Маленькие золотые… — серьги. Маленьких золотых шарфов и клатчей не бывает." },
+        { a: "bracelet", o: ["bracelet", "necklace", "scarf"], why: "«on the wrist» — на запястье носят браслет." },
+        { a: "clutch", o: ["clutch", "bracelet", "corset"], why: "Маленькая сумочка в руке вместо большой — клатч." },
+        { a: "scarf", o: ["scarf", "bracelet", "clutch"], why: "«around the neck… adds colour to a coat» — шёлковый платок или шарф." }
+      ]
+    },
+    {
+      type: "odd",
+      rows: [
+        { w: ["necklace", "scarf", "bracelet", "earrings"], o: 1, why: "scarf — из ткани, это не украшение. Ожерелье, браслет и серьги — jewellery." },
+        { w: ["delicate", "chunky", "big", "heavy"], o: 0, why: "delicate — тонкий, изящный. chunky, big и heavy — про крупные массивные вещи." },
+        { w: ["clutch", "handbag", "bracelet", "backpack"], o: 2, why: "bracelet — украшение. Клатч, сумка и рюкзак — это сумки." }
+      ]
+    },
+    { type: "flash", cards: ["scarf", "clutch", "statement piece", "chunky", "layer"] },
+    {
+      type: "cloze", mode: "type", title: "Complete the sentences",
+      text: "1. Rings, necklaces and earrings are all types of {0}.\n2. She wears three thin gold necklaces at once — she likes to {1} them.\n3. This necklace is big and heavy — it's very {2}.\n4. She put her phone and lipstick into a small evening {3}.\n5. Belts, bags, hats and scarves are all {4}.",
+      gaps: [
+        { a: "jewellery", alt: ["jewelry"], why: "Общее слово для колец, серёг и ожерелий — jewellery." },
+        { a: "layer", why: "Несколько цепочек одновременно — носить слоями, layer." },
+        { a: "chunky", why: "Большое и тяжёлое украшение — chunky." },
+        { a: "clutch", why: "Маленькая вечерняя сумочка без ручки — клатч." },
+        { a: "accessories", why: "Ремни, сумки, шляпы и шарфы — всё это аксессуары." }
+      ]
+    },
+    {
+      type: "builder", g: "g05",
+      items: [
+        {
+          ctx: "Бюджет маленький — скажи, что много украшений на съёмку не нужно.",
+          formula: ["We", "don't + V", "much / many", "noun", "for + event"],
+          parts: ["We", { v: "NOT NEED", a: ["don't need", "do not need"], f: [1], rule: "Отрицание в Present Simple: don't + глагол в начальной форме." }, { p: ["much", "many", "a"], a: "much", f: [2], rule: "jewellery — неисчисляемое → much. many — только с исчисляемыми во множественном числе." }, "jewellery for this shoot."]
+        },
+        {
+          ctx: "Спроси, сколько шарфов на рейле.",
+          formula: ["How", "much / many", "plural noun", "are / is", "there + place?"],
+          parts: ["How", { p: ["many", "much", "a lot"], a: "many", f: [1], rule: "scarves — исчисляемое во множественном числе → How many." }, "scarves", { v: "BE", a: ["are"], f: [3], rule: "scarves — множественное → are there." }, "there on the rail?"]
+        },
+        {
+          ctx: "Скажи, что у модели на руке много браслетов.",
+          formula: ["Subject", "V(-s)", "a lot of", "plural noun", "on + place"],
+          parts: ["The model", { v: "WEAR", a: ["wears", "is wearing"], f: [1], rule: "The model = she → wears (или is wearing, если прямо сейчас)." }, { p: ["a lot of", "much", "a few of"], a: "a lot of", f: [2], rule: "a lot of подходит и к исчисляемым, и к неисчисляемым. much с исчисляемыми не ставят." }, "bracelets on her left arm."]
+        }
+      ]
+    },
+    {
+      type: "spot", g: "g05",
+      sets: [
+        {
+          sentences: ["How much necklaces do you need?", "There isn't much jewellery in this box.", "She has a lot of scarves."],
+          err: { s: 0, span: "much", fix: ["many"], g: "g05", note: "necklaces — исчисляемое во множественном числе → How many." }
+        },
+        {
+          sentences: ["I need some advice about accessories.", "We need two new jewelleries for the shoot.", "How many earrings are on the table?"],
+          err: { s: 1, span: "two new jewelleries", fix: ["two new pieces of jewellery", "some new jewellery"], g: "g05", note: "jewellery — неисчисляемое: у него нет -s и его нельзя посчитать числом. Говорят two pieces of jewellery или some jewellery." }
+        }
+      ]
+    }
+  ]
+});
+
+FE.addDay({
+  n: 8,
+  words: [
+    { w: "footwear", pos: "noun", ru: "обувь (общее слово)", def: "shoes, boots and sandals — all the things you wear on your feet", ex: "The shop sells clothes, bags and ___.", note: "footwear — неисчисляемое: much footwear, но не footwears." },
+    { w: "heels", pos: "noun, plural", ru: "туфли на каблуке; каблуки", def: "shoes with a high part under the back of the foot", ex: "She can't walk far in high ___." },
+    { w: "flats", pos: "noun, plural", ru: "обувь на плоской подошве, балетки", def: "shoes with no heel or a very low heel", ex: "I always carry a pair of ___ in my bag." },
+    { w: "court shoes", pos: "noun, plural", ru: "туфли-лодочки", def: "simple women's shoes with a heel and no laces or straps (in American English: pumps)", ex: "Black ___ go well with a business suit." },
+    { w: "ankle boots", pos: "noun, plural", ru: "ботильоны, ботинки до щиколотки", def: "short boots that end just above the ankle", ex: "___ look great with skinny jeans.", exA: "Ankle boots" },
+    { w: "loafers", pos: "noun, plural", ru: "лоферы", def: "flat leather shoes without laces that you slide your feet into", ex: "He wore brown ___ without socks." },
+    { w: "mules", pos: "noun, plural", ru: "мюли", def: "shoes with no back part around the heel", ex: "___ are easy to put on: you just slide your feet in.", exA: "Mules" },
+    { w: "stilettos", pos: "noun, plural", ru: "туфли на шпильке", def: "women's shoes with a very high, thin heel", ex: "She wore red ___ to the party and danced all night." },
+    { w: "sole", pos: "noun", ru: "подошва", def: "the bottom part of a shoe that touches the ground", ex: "These boots have a thick rubber ___." },
+    { w: "pointed", pos: "adjective", ru: "острый, заострённый (о носке)", def: "with a narrow, sharp end", ex: "Shoes with ___ toes make the legs look longer." }
+  ],
+  ex: [
+    { type: "flash", cards: ["footwear", "heels", "flats", "court shoes", "ankle boots"] },
+    {
+      type: "match", title: "Соедини пары",
+      pairs: [
+        ["a rubber", "резиновая", "sole", "подошва"],
+        ["a pointed", "острый", "toe", "носок"],
+        ["walk", "ходить", "in heels", "на каблуках"],
+        ["slide your feet", "просунуть ноги", "into mules", "в мюли"],
+        ["break in", "разносить", "new shoes", "новую обувь"]
+      ]
+    },
+    {
+      type: "cloze", mode: "select",
+      text: "For a catalogue shoot, the stylist brings a lot of {0}: there are boxes of shoes and boots everywhere. For the office looks, she chooses classic black {1} with a medium heel. For the evening dress, the model wears red {2} with very high, thin heels. The casual looks need something comfortable, so the stylist adds {3} — flat leather shoes without laces. Brown {4} that cover the ankle look great with jeans in autumn. Before the shoot, the assistant cleans the {5} of every shoe, because the camera can see the bottom when the model sits.",
+      gaps: [
+        { a: "footwear", o: ["footwear", "jewellery", "accessories"], why: "«boxes of shoes and boots» — это обувь, footwear." },
+        { a: "court shoes", o: ["court shoes", "trainers", "flats"], why: "Классика для офиса со средним каблуком — лодочки. У flats каблука нет, trainers — спортивная обувь." },
+        { a: "stilettos", o: ["stilettos", "loafers", "flats"], why: "«very high, thin heels» — шпильки, stilettos. Лоферы и балетки — плоские." },
+        { a: "loafers", o: ["loafers", "stilettos", "court shoes"], why: "«flat leather shoes without laces» — лоферы." },
+        { a: "ankle boots", o: ["ankle boots", "loafers", "mules"], why: "«cover the ankle» — закрывают щиколотку, значит это ботинки: ankle boots." },
+        { a: "sole", o: ["sole", "heel", "toe"], why: "«the bottom» — низ обуви, подошва: sole." }
+      ]
+    },
+    {
+      type: "odd",
+      rows: [
+        { w: ["stilettos", "court shoes", "flats", "heels"], o: 2, why: "flats — без каблука. Шпильки, лодочки и heels — на каблуке." },
+        { w: ["mules", "ankle boots", "sandals", "flip-flops"], o: 1, why: "ankle boots — закрытая осенняя обувь. Мюли, сандалии и шлёпанцы — открытые, летние." },
+        { w: ["rubber", "pointed", "round", "square"], o: 0, why: "rubber — материал (резина). pointed, round и square — форма носка." }
+      ]
+    },
+    { type: "flash", cards: ["loafers", "mules", "stilettos", "sole", "pointed"] },
+    {
+      type: "cloze", mode: "type", title: "Complete the sentences",
+      text: "1. Shoes, boots and sandals: the shop sells all kinds of {0}.\n2. My feet hurt after a night in high heels, so I changed into a pair of {1} with no heel at all.\n3. These boots have a thick rubber {2}, so they are good for rain.\n4. {3} have no back, so you can just slide your feet into them.\n5. Her shoes have very {4} toes — they look sharp and elegant.",
+      gaps: [
+        { a: "footwear", why: "Общее слово для всей обуви — footwear." },
+        { a: "flats", alt: ["loafers", "trainers"], why: "Совсем без каблука — flats. Лоферы и кроссовки тоже засчитываем." },
+        { a: "sole", why: "Низ ботинка, который касается земли, — подошва." },
+        { a: "Mules", why: "Без задника, ноги просто просовывают внутрь — мюли." },
+        { a: "pointed", why: "Острые носы туфель — pointed toes." }
+      ]
+    },
+    {
+      type: "builder", g: "g05",
+      items: [
+        {
+          ctx: "Спроси стилиста, сколько пар туфель на каблуке нужно на съёмку.",
+          formula: ["How", "many / much", "pairs of + noun", "do we + V", "for + event?"],
+          parts: ["How", { p: ["many", "much", "a lot"], a: "many", f: [1], rule: "pairs — исчисляемое → How many." }, "pairs of heels do we", { v: "NEED", a: ["need"], f: [3], rule: "После do глагол в начальной форме: do we need." }, "for the shoot?"]
+        },
+        {
+          ctx: "Скажи, что в шкафу мало обуви на плоской подошве.",
+          formula: ["There", "isn't / aren't", "much / many", "plural noun", "in + place"],
+          parts: ["There", { v: "NOT BE", a: ["aren't", "are not"], f: [1], rule: "flats — множественное число → there aren't." }, { p: ["many", "much", "a lot"], a: "many", f: [2], rule: "Исчисляемое во множественном числе в отрицании → not many." }, "flats in the wardrobe."]
+        },
+        {
+          ctx: "Скажи, что вы каждый сезон тратите на обувь много денег.",
+          formula: ["We", "V", "a lot of", "uncountable noun", "on + thing"],
+          parts: ["We", { v: "SPEND", a: ["spend"], f: [1], rule: "Present Simple, we → глагол без -s." }, { p: ["a lot of", "many", "a few"], a: "a lot of", f: [2], rule: "money — неисчисляемое: a lot of money. many и a few — только с исчисляемыми." }, "money on footwear every season."]
+        }
+      ]
+    },
+    {
+      type: "spot", g: "g05",
+      sets: [
+        {
+          sentences: ["How many money do we have for shoes?", "There are a lot of loafers on the shelf.", "We don't need much footwear for this shoot."],
+          err: { s: 0, span: "many", fix: ["much"], g: "g05", note: "money — неисчисляемое → How much money." }
+        },
+        {
+          sentences: ["She doesn't wear stilettos to work.", "The sole of this boot is broken.", "She has too many footwears in her wardrobe."],
+          err: { s: 2, span: "many footwears", fix: ["much footwear"], g: "g05", note: "footwear — неисчисляемое: без -s и с much. Можно и так: too many pairs of shoes." }
+        }
+      ]
+    }
+  ]
+});
+
+FE.addDay({
+  n: 9,
+  words: [
+    { w: "casual", pos: "adjective", ru: "повседневный", def: "relaxed and comfortable, not for formal events", ex: "On Fridays, people wear ___ clothes to the office.", note: "smart casual — дресс-код «нарядно, но без костюма»: пиджак с джинсами, рубашка без галстука." },
+    { w: "smart", pos: "adjective", ru: "нарядный, элегантный, опрятный", def: "neat and elegant, good for work or important events", ex: "You need a ___ jacket for the job interview.", note: "В разговоре об одежде smart — «нарядный, опрятный», а не «умный»." },
+    { w: "sporty", pos: "adjective", ru: "спортивный (о стиле)", def: "looking like clothes for sport: active and comfortable", ex: "Trainers and a hoodie give the outfit a ___ feel." },
+    { w: "edgy", pos: "adjective", ru: "дерзкий, с вызовом", def: "modern and a little bit shocking, not safe or classic", ex: "A black leather jacket makes a pretty dress look more ___." },
+    { w: "feminine", pos: "adjective", ru: "женственный", def: "soft and pretty, with details like lace, bows or flowers", ex: "A pink blouse with a bow looks very ___." },
+    { w: "minimalist", pos: "adjective", ru: "минималистичный", def: "very simple, with clean lines, few details and few colours", ex: "Her style is ___: black, white and no jewellery." },
+    { w: "chic", pos: "adjective", ru: "шикарный, стильный", def: "stylish and elegant in a simple way (it sounds like «sheek»)", ex: "Parisian women are famous for their ___ style." },
+    { w: "effortless", pos: "adjective", ru: "непринуждённый, без видимых усилий", def: "looking easy and natural, as if you did not try hard", ex: "Her style looks ___: a white shirt, jeans and no make-up." },
+    { w: "vintage", pos: "adjective", ru: "винтажный", def: "old, from a past decade, but good quality and still stylish", ex: "She found a ___ handbag from the 1960s at the market." },
+    { w: "well-dressed", pos: "adjective", ru: "хорошо одетый", def: "wearing nice, stylish clothes", ex: "He is always ___, even at the weekend." }
+  ],
+  ex: [
+    { type: "flash", cards: ["casual", "smart", "sporty", "edgy", "feminine"] },
+    {
+      type: "match", title: "Соедини пары",
+      pairs: [
+        ["smart", "нарядно-", "casual", "повседневный (дресс-код)"],
+        ["effortless", "непринуждённый", "chic", "шик"],
+        ["a vintage", "винтажная", "find", "находка"],
+        ["give an outfit", "придать образу", "an edgy feel", "дерзкое настроение"],
+        ["dress up", "нарядиться", "for a party", "на вечеринку"]
+      ]
+    },
+    {
+      type: "cloze", mode: "select",
+      text: "A good stylist can describe any look in a few words. Jeans, a T-shirt and trainers? That's {0} — relaxed and comfortable. A tailored jacket and neat trousers are {1}: perfect for a business meeting. Leggings, a hoodie and running shoes look {2}. A black leather jacket over a silk dress makes the outfit {3}. A pink blouse with lace and a bow is very {4}. And a simple black dress with no jewellery at all? That's {5} style — clean lines and few details.",
+      gaps: [
+        { a: "casual", o: ["casual", "smart", "edgy"], why: "«relaxed and comfortable» — повседневный стиль, casual." },
+        { a: "smart", o: ["smart", "sporty", "casual"], why: "Пиджак и аккуратные брюки для деловой встречи — нарядно, smart." },
+        { a: "sporty", o: ["sporty", "feminine", "smart"], why: "Легинсы, худи и беговые кроссовки — спортивный стиль." },
+        { a: "edgy", o: ["edgy", "feminine", "casual"], why: "Кожаная куртка поверх шёлкового платья добавляет дерзости — edgy." },
+        { a: "feminine", o: ["feminine", "sporty", "minimalist"], why: "Кружево и бант — женственные детали, feminine." },
+        { a: "minimalist", o: ["minimalist", "edgy", "vintage"], why: "«clean lines and few details» — минимализм." }
+      ]
+    },
+    {
+      type: "odd",
+      rows: [
+        { w: ["smart", "casual", "relaxed", "sporty"], o: 0, why: "smart — нарядный. casual, relaxed и sporty — про удобную повседневную одежду." },
+        { w: ["chic", "elegant", "scruffy", "stylish"], o: 2, why: "scruffy — неряшливый. Остальные три — про стильный, элегантный вид." },
+        { w: ["vintage", "retro", "1970s-inspired", "futuristic"], o: 3, why: "futuristic — про будущее. Остальные три — про стиль прошлых десятилетий." }
+      ]
+    },
+    { type: "flash", cards: ["minimalist", "chic", "effortless", "vintage", "well-dressed"] },
+    {
+      type: "cloze", mode: "type", title: "Complete the sentences",
+      text: "1. For the office party the dress code is smart {0}: no suit, but no trainers either.\n2. This coat is from the 1960s — it's real {1}.\n3. He always looks {2}: his shirts are ironed and his shoes are clean.\n4. French women often look {3} in a simple trench coat and red lipstick.\n5. Her make-up looks natural and {4}, as if it took one minute.",
+      gaps: [
+        { a: "casual", why: "smart casual — дресс-код «нарядно, но без костюма»." },
+        { a: "vintage", why: "Настоящая вещь из прошлого десятилетия — vintage." },
+        { a: "well-dressed", alt: ["smart", "well dressed"], why: "Всегда хорошо и аккуратно одет — well-dressed. smart тоже засчитываем." },
+        { a: "chic", alt: ["elegant", "stylish"], why: "Простой тренч и красная помада — классический французский шик, chic." },
+        { a: "effortless", why: "Будто сделано за минуту — effortless." }
+      ]
+    },
+    {
+      type: "builder", g: "g06",
+      items: [
+        {
+          ctx: "Опиши платье: красивое, длинное, красное, шёлковое.",
+          formula: ["opinion", "size", "colour", "material", "noun"],
+          parts: ["She is wearing a", { p: ["beautiful long red silk", "red silk long beautiful", "long beautiful silk red"], a: "beautiful long red silk", f: [0, 1, 2, 3], rule: "Порядок: мнение → размер → цвет → материал → вещь." }, "dress."]
+        },
+        {
+          ctx: "Стилист нашла на рынке маленькую винтажную кожаную сумку.",
+          formula: ["size", "age", "material", "noun"],
+          parts: ["The stylist found a", { p: ["small vintage leather", "leather small vintage", "vintage leather small"], a: "small vintage leather", f: [0, 1, 2], rule: "Размер → возраст → материал. Материал всегда последний перед вещью." }, "bag at the market."]
+        },
+        {
+          ctx: "Для съёмки он купил чёрные итальянские лоферы.",
+          formula: ["Subject", "V", "colour", "origin", "noun"],
+          parts: ["He", { v: "BUY", a: ["buys", "bought"], f: [1], rule: "He → buys (Present Simple, -s). Если уже знаешь Past Simple — bought тоже верно." }, { p: ["black Italian", "Italian black"], a: "black Italian", f: [2, 3], rule: "Цвет идёт перед происхождением: black Italian loafers." }, "loafers for the shoot."]
+        }
+      ]
+    },
+    {
+      type: "spot", g: "g06",
+      sets: [
+        {
+          sentences: ["She has a leather black jacket.", "He is wearing a smart navy suit.", "I love your vintage silk scarf."],
+          err: { s: 0, span: "leather black", fix: ["black leather"], g: "g06", note: "Цвет идёт перед материалом: a black leather jacket." }
+        },
+        {
+          sentences: ["They found a lovely old wooden jewellery box.", "Her style is very chic and effortless.", "The model is wearing pink small earrings."],
+          err: { s: 2, span: "pink small", fix: ["small pink"], g: "g06", note: "Размер идёт перед цветом: small pink earrings." }
+        }
+      ]
+    }
+  ]
+});
+
+FE.addDay({
+  n: 10,
+  words: [
+    { w: "sample", pos: "noun", ru: "образец (вещь из коллекции для съёмок и показов)", def: "a piece of clothing that a brand makes for photos and shows before it goes to the shops", ex: "The brand sent us twenty ___ for the catalogue.", exA: "samples" },
+    { w: "steamer", pos: "noun", ru: "отпариватель", def: "a machine that takes creases out of clothes with hot steam", ex: "Use the ___ — this silk blouse is too delicate for an iron." },
+    { w: "lint roller", pos: "noun", ru: "ролик для чистки одежды", def: "a sticky roller that takes hair and dust off clothes", ex: "Black velvet shows every hair, so keep a ___ in your kit." },
+    { w: "safety pin", pos: "noun", ru: "английская булавка", def: "a pin with a cover on its point, so it can't hurt you", ex: "The skirt was too big, so we fixed it at the back with a ___." },
+    { w: "clip", pos: "noun", ru: "зажим, клипса", def: "a small metal or plastic thing that holds fabric tight at the back of a garment", ex: "The dress was too loose, so the stylist used two ___ at the back.", exA: "clips" },
+    { w: "tuck in", pos: "verb", ru: "заправить (рубашку, блузку)", def: "to put the bottom of a shirt or top inside your trousers or skirt", ex: "Let's ___ the blouse to show her waist." },
+    { w: "accessorise", pos: "verb", ru: "дополнить аксессуарами", def: "to add bags, jewellery, belts and other small things to an outfit", ex: "She likes to ___ a plain black dress with red shoes.", note: "accessorise — британское написание; в американском — accessorize." },
+    { w: "complete the look", pos: "phrase", ru: "завершить образ", def: "to add the last item that makes an outfit perfect", ex: "Gold earrings and a small bag ___." },
+    { w: "flat lay", pos: "noun", ru: "флэтлей, раскладка (фото вещей сверху)", def: "a photo of clothes and accessories lying on a table or the floor, taken from above", ex: "For the website, we shot every outfit as a ___ on a white background." },
+    { w: "shot list", pos: "noun", ru: "список кадров", def: "a list of all the photos you need to take during a shoot", ex: "Look at the ___: we still need three photos of the coats." }
+  ],
+  ex: [
+    { type: "flash", cards: ["sample", "steamer", "lint roller", "safety pin", "clip"] },
+    {
+      type: "match", title: "Соедини пары",
+      pairs: [
+        ["steam", "отпарить", "the creases out", "складки"],
+        ["tuck the shirt", "заправить рубашку", "into the trousers", "в брюки"],
+        ["follow", "следовать", "the shot list", "списку кадров"],
+        ["send the samples", "отправить образцы", "back to the brand", "обратно бренду"],
+        ["pack", "собрать", "the styling kit", "набор стилиста"]
+      ]
+    },
+    {
+      type: "cloze", mode: "select",
+      text: "It's 7 a.m. and the studio is quiet. The brand has sent forty {0} for the autumn catalogue, and they are all on the rail. First, the stylist checks the {1}: there are twelve looks to shoot today. The coats are creased after the journey, so the assistant uses the {2}. The black velvet jacket is covered in dust, so she needs the {3}. The model is a size 8, but the trousers are a size 10 — the stylist uses two {4} at the back so the camera can't see it. Finally, gold earrings and a small bag {5}. For the website, the team also photographs every outfit from above on a white table — these photos are called {6}.",
+      gaps: [
+        { a: "samples", o: ["samples", "steamers", "shot lists"], why: "Вещи, которые бренд присылает на съёмку, — образцы, samples." },
+        { a: "shot list", o: ["shot list", "flat lay", "lint roller"], why: "«twelve looks to shoot today» — план кадров на день, shot list." },
+        { a: "steamer", o: ["steamer", "lint roller", "safety pin"], why: "Мятые пальто → отпариватель." },
+        { a: "lint roller", o: ["lint roller", "steamer", "clip"], why: "Пыль и ворсинки на бархате снимают роликом, lint roller." },
+        { a: "clips", o: ["clips", "samples", "flat lays"], why: "Брюки велики → их подкалывают сзади зажимами, clips. Камера снимает спереди и их не видит." },
+        { a: "complete the look", o: ["complete the look", "steam the coats", "follow the brief"], why: "Последние детали, которые делают образ законченным, — complete the look." },
+        { a: "flat lays", o: ["flat lays", "shot lists", "samples"], why: "Фото вещей сверху на столе — flat lays." }
+      ]
+    },
+    {
+      type: "odd",
+      rows: [
+        { w: ["steamer", "lint roller", "mood board", "safety pin"], o: 2, why: "mood board — это идея проекта. Отпариватель, ролик и булавка — инструменты в наборе стилиста." },
+        { w: ["catalogue", "steamer", "website", "lookbook"], o: 1, why: "steamer — инструмент. Каталог, сайт и лукбук — где потом окажутся фото." },
+        { w: ["creased", "dusty", "stained", "perfect"], o: 3, why: "perfect — идеальный. creased (мятый), dusty (пыльный), stained (в пятнах) — проблемы, которые стилист решает до съёмки." }
+      ]
+    },
+    { type: "flash", cards: ["tuck in", "accessorise", "complete the look", "flat lay", "shot list"] },
+    {
+      type: "cloze", mode: "type", title: "Complete the sentences",
+      text: "1. This silk blouse is too delicate for an iron — use the {0}.\n2. Let's {1} the shirt to show her waist.\n3. Before every shoot, the photographer and the stylist check the {2} together.\n4. The jacket is too big, so I'll hold it at the back with two {3}.\n5. She likes to {4} a simple black dress with red shoes and a red bag.",
+      gaps: [
+        { a: "steamer", why: "Для деликатных тканей вместо утюга — отпариватель." },
+        { a: "tuck in", why: "Заправить рубашку, чтобы показать талию, — tuck in." },
+        { a: "shot list", why: "Список кадров на съёмку — shot list." },
+        { a: "clips", alt: ["safety pins", "pins"], why: "Зажимы сзади — clips. Булавки тоже засчитываем." },
+        { a: "accessorise", alt: ["accessorize"], why: "Дополнить образ аксессуарами — accessorise." }
+      ]
+    },
+    {
+      type: "builder", g: "g06",
+      items: [
+        {
+          ctx: "В брифе клиент просит большую коричневую кожаную сумку.",
+          formula: ["Subject", "V(-s)", "size", "colour", "material", "noun"],
+          parts: ["The client", { v: "WANT", a: ["wants"], f: [1], rule: "The client = he / she → wants." }, { p: ["a big brown leather", "a brown big leather", "a leather brown big"], a: "a big brown leather", f: [2, 3, 4], rule: "Размер → цвет → материал." }, "bag for the autumn look."]
+        },
+        {
+          ctx: "Для страницы 12 каталога нужна красивая старая французская блузка.",
+          formula: ["We", "V", "opinion", "age", "origin", "noun"],
+          parts: ["We", { v: "NEED", a: ["need"], f: [1], rule: "need — глагол состояния, только Simple: we need." }, { p: ["a lovely old French", "a French old lovely", "an old lovely French"], a: "a lovely old French", f: [2, 3, 4], rule: "Мнение → возраст → происхождение." }, "blouse for page 12."]
+        }
+      ]
+    },
+    {
+      type: "spot", g: "g06",
+      sets: [
+        {
+          sentences: ["We need some safety pins for the fitting.", "She is wearing a cotton white shirt.", "There are two samples on the rail."],
+          err: { s: 1, span: "cotton white", fix: ["white cotton"], g: "g06", note: "Цвет идёт перед материалом: a white cotton shirt." }
+        },
+        {
+          sentences: ["How many clips do we have?", "The stylist is steaming the coats now.", "There isn't any samples in this box."],
+          err: { s: 2, span: "isn't", fix: ["aren't"], g: "g04", note: "samples — множественное число → there aren't any samples." }
         }
       ]
     }

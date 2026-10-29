@@ -84,10 +84,105 @@ FE.grammar = {
       ["People didn't wore jeans.", "People didn't wear jeans.", "После didn't глагол в начальной форме."]
     ]
   },
-  g04: { title: "There is / there are, some / any", level: "A2" },
-  g05: { title: "Исчисляемые и неисчисляемые: much, many, a lot of", level: "A2" },
-  g06: { title: "Порядок прилагательных", level: "A2+" },
-  g08: { title: "Past Continuous и Past Simple", level: "A2+" },
+  g04: {
+    title: "There is / there are, some / any", level: "A2",
+    intro: "There is / there are — когда говорим, что что-то где-то есть. По-русски начинаем с места («На рейле — два пальто»), а по-английски — с There is / There are, место ставим в конец. some и any значат «несколько, немного», когда точное количество неважно.",
+    formula: [
+      ["There is", "there is + единственное или неисчисляемое", "There is a scarf on the chair."],
+      ["There are", "there are + множественное", "There are two samples on the rail."],
+      ["some", "в утвердительных предложениях", "There are some striped shirts in the box."],
+      ["any", "в вопросах и отрицаниях", "Are there any floral dresses? — No, there aren't any."]
+    ],
+    markers: [
+      ["Отрицание и вопрос", "there isn't / there aren't · Is there…? / Are there…?"],
+      ["Исключение", "В просьбах и предложениях — some, даже в вопросе: Can I have some pins?"]
+    ],
+    examples: [
+      ["There is a polka dot dress in the catalogue.", "В каталоге есть платье в горошек."],
+      ["There are some checked coats on the rail.", "На рейле есть несколько клетчатых пальто."],
+      ["There isn't any animal print in this collection.", "В этой коллекции нет животного принта."],
+      ["Are there any plain T-shirts?", "Есть однотонные футболки?"]
+    ],
+    mistakes: [
+      ["There is some stripes on the shirt.", "There are some stripes on the shirt.", "stripes — множественное число → there are."],
+      ["There aren't some floral prints.", "There aren't any floral prints.", "В отрицании — any."],
+      ["In the box are two belts.", "There are two belts in the box.", "Начинаем с There are, а место — в конце."]
+    ]
+  },
+  g05: {
+    title: "Исчисляемые и неисчисляемые: much, many, a lot of", level: "A2",
+    intro: "Исчисляемые существительные можно посчитать: one bag, two bags. Неисчисляемые — нельзя: jewellery, footwear, money, advice. У них нет множественного числа и нет a/an. От этого зависит, говорим мы much или many.",
+    formula: [
+      ["many", "+ исчисляемые во множественном числе", "How many scarves do we need?"],
+      ["much", "+ неисчисляемые", "We don't have much jewellery."],
+      ["a lot of", "+ любые, чаще в утвердительных", "She has a lot of bracelets and a lot of jewellery."]
+    ],
+    markers: [
+      ["much и many", "Чаще в вопросах и отрицаниях: How much…? How many…? not much, not many."],
+      ["Неисчисляемые в моде", "jewellery, footwear, clothing, equipment, money, advice, information"]
+    ],
+    examples: [
+      ["How many pairs of heels are there?", "Сколько там пар туфель на каблуке?"],
+      ["We haven't got much time.", "У нас мало времени."],
+      ["There is a lot of jewellery on the table.", "На столе много украшений."],
+      ["Can I give you some advice?", "Можно дам совет?"]
+    ],
+    mistakes: [
+      ["two jewelleries", "two pieces of jewellery", "jewellery — неисчисляемое, считаем через pieces of."],
+      ["How much necklaces?", "How many necklaces?", "necklaces — исчисляемое → many."],
+      ["How many money?", "How much money?", "money — неисчисляемое → much."],
+      ["many footwears", "a lot of footwear / many pairs of shoes", "footwear — неисчисляемое, без -s."]
+    ]
+  },
+  g06: {
+    title: "Порядок прилагательных", level: "A2+",
+    intro: "Если перед вещью стоят несколько прилагательных, в английском у них строгий порядок. Обычно их 2–3, и главное помнить: мнение идёт первым, материал — последним, прямо перед вещью.",
+    formula: [
+      ["Полный порядок", "мнение → размер → возраст → форма → цвет → происхождение → материал → назначение + вещь", "a beautiful long red silk evening dress"],
+      ["Коротко", "мнение → размер → цвет → материал + вещь", "a lovely small black leather bag"]
+    ],
+    markers: [
+      ["Запомни", "OSASCOMP: Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose"],
+      ["Без запятых", "Между такими прилагательными обычно нет ни запятой, ни and: a big brown leather bag."]
+    ],
+    examples: [
+      ["a smart navy wool coat", "нарядное тёмно-синее шерстяное пальто (мнение → цвет → материал)"],
+      ["a small vintage leather bag", "маленькая винтажная кожаная сумка (размер → возраст → материал)"],
+      ["black Italian loafers", "чёрные итальянские лоферы (цвет → происхождение)"],
+      ["a long cotton summer dress", "длинное хлопковое летнее платье (размер → материал → назначение)"]
+    ],
+    mistakes: [
+      ["a leather black jacket", "a black leather jacket", "Цвет идёт перед материалом."],
+      ["pink small earrings", "small pink earrings", "Размер идёт перед цветом."],
+      ["a silk beautiful scarf", "a beautiful silk scarf", "Мнение всегда первое."]
+    ]
+  },
+  g08: {
+    title: "Past Continuous и Past Simple",
+    level: "A2+",
+    intro: "Оба времени описывают прошлое, но с разным фокусом. Past Continuous показывает процесс, атмосферу и фоновое действие в конкретный момент. Past Simple называет завершенный факт или короткое действие, которое прервало этот процесс.",
+    formula: [
+      ["Past Continuous", "was / were + V-ing", "The model was wearing a bias-cut evening gown."],
+      ["Past Simple", "V-ed / V2 (вторая форма глагола)", "Schiaparelli designed a surrealist hat."],
+      ["Связка (прерывание)", "was/were + V-ing ... WHEN + V-ed (или WHILE + was/were + V-ing)", "We were styling the look when the director arrived."]
+    ],
+    markers: [
+      ["Past Continuous", "while, as, at 5 pm yesterday, all evening, this time yesterday"],
+      ["Past Simple", "when, suddenly, yesterday, in 1935, two days ago, then"],
+      ["Подсказка для историй", "While обычно вводит долгий процесс (Past Continuous), а when — внезапное короткое событие (Past Simple)."]
+    ],
+    examples: [
+      ["During the 1930s, women were dreaming of Hollywood glamour.", "В 1930-е годы женщины мечтали о голливудском гламуре (фоновый длительный процесс эпохи)."],
+      ["While the stylist was steaming the silk dress, the photographer set up the lights.", "Пока стилист отпаривала шелковое платье, фотограф выставил свет (длинное действие на фоне другого события)."],
+      ["The model was walking on set when the vintage zip broke.", "Модель шла на съемочную площадку, когда винтажная молния сломалась (короткое действие прервало процесс)."],
+      ["Schiaparelli met Salvador Dalí and created the famous lobster dress.", "Скиапарелли встретила Сальвадора Дали и создала знаменитое платье с омаром (последовательность завершенных фактов)."]
+    ],
+    mistakes: [
+      ["While I steamed the gown, the light broke.", "While I was steaming the gown, the light broke.", "После while для длительного действия-фона нужен Past Continuous (was steaming)."],
+      ["The model was dropping her gloves when she turned.", "The model dropped her gloves while she was turning.", "Уронить перчатки — мгновенный факт (Past Simple), а поворачиваться — процесс (Past Continuous)."],
+      ["They was shooting the vintage catalogue all day.", "They were shooting the vintage catalogue all day.", "С местоимениями they / we / you используем were, а не was."]
+    ]
+  },
   g09: { title: "Сравнения: -er / more, as … as, too / enough", level: "A2" },
   g10: { title: "used to", level: "A2+" },
   g11: { title: "Present Perfect: ever, never, just, already, yet", level: "A2+" },
