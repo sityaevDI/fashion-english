@@ -158,29 +158,29 @@ FE.grammar = {
     ]
   },
   g08: {
-    title: "Past Continuous и Past Simple",
-    level: "A2+",
-    intro: "Оба времени описывают прошлое, но с разным фокусом. Past Continuous показывает процесс, атмосферу и фоновое действие в конкретный момент. Past Simple называет завершенный факт или короткое действие, которое прервало этот процесс.",
+    title: "Past Continuous и Past Simple", level: "A2+",
+    intro: "Past Continuous (was / were + V-ing) — действие было в процессе в какой-то момент прошлого: фон, «картинка». Past Simple — законченный факт или короткое событие. Часто они стоят в одном предложении: короткое событие прерывает длинный процесс.",
     formula: [
-      ["Past Continuous", "was / were + V-ing", "The model was wearing a bias-cut evening gown."],
-      ["Past Simple", "V-ed / V2 (вторая форма глагола)", "Schiaparelli designed a surrealist hat."],
-      ["Связка (прерывание)", "was/were + V-ing ... WHEN + V-ed (или WHILE + was/were + V-ing)", "We were styling the look when the director arrived."]
+      ["Past Continuous", "was / were + V-ing", "At 9 a.m. the stylist was steaming the gowns."],
+      ["Past Simple", "V-ed / V2", "The photographer arrived at ten."],
+      ["Процесс + событие", "was / were + V-ing … when + Past Simple", "We were dressing the model when the client called."],
+      ["Два процесса", "while + Past Continuous, Past Continuous", "While the stylist was pinning the dress, the photographer was setting up the lights."]
     ],
     markers: [
-      ["Past Continuous", "while, as, at 5 pm yesterday, all evening, this time yesterday"],
-      ["Past Simple", "when, suddenly, yesterday, in 1935, two days ago, then"],
-      ["Подсказка для историй", "While обычно вводит долгий процесс (Past Continuous), а when — внезапное короткое событие (Past Simple)."]
+      ["Past Continuous", "at 5 p.m. yesterday, at that moment, all morning, while"],
+      ["Past Simple", "when (короткое событие), suddenly, yesterday, in 1932, ago"],
+      ["Подсказка", "while — обычно перед длинным процессом, when — перед коротким событием."]
     ],
     examples: [
-      ["During the 1930s, women were dreaming of Hollywood glamour.", "В 1930-е годы женщины мечтали о голливудском гламуре (фоновый длительный процесс эпохи)."],
-      ["While the stylist was steaming the silk dress, the photographer set up the lights.", "Пока стилист отпаривала шелковое платье, фотограф выставил свет (длинное действие на фоне другого события)."],
-      ["The model was walking on set when the vintage zip broke.", "Модель шла на съемочную площадку, когда винтажная молния сломалась (короткое действие прервало процесс)."],
-      ["Schiaparelli met Salvador Dalí and created the famous lobster dress.", "Скиапарелли встретила Сальвадора Дали и создала знаменитое платье с омаром (последовательность завершенных фактов)."]
+      ["The actress was walking down the stairs when the cameras started.", "Актриса спускалась по лестнице, когда включились камеры (процесс + событие)."],
+      ["What were you doing at 8 p.m.? — I was packing the samples.", "Что ты делала в 8 вечера? — Упаковывала образцы (процесс в момент прошлого)."],
+      ["While she was sewing, her sister was cutting the fabric.", "Пока она шила, её сестра кроила ткань (два процесса одновременно)."],
+      ["Schiaparelli met Dalí, and together they created the Lobster Dress.", "Скьяпарелли познакомилась с Дали, и вместе они создали платье с омаром (цепочка фактов — только Past Simple)."]
     ],
     mistakes: [
-      ["While I steamed the gown, the light broke.", "While I was steaming the gown, the light broke.", "После while для длительного действия-фона нужен Past Continuous (was steaming)."],
-      ["The model was dropping her gloves when she turned.", "The model dropped her gloves while she was turning.", "Уронить перчатки — мгновенный факт (Past Simple), а поворачиваться — процесс (Past Continuous)."],
-      ["They was shooting the vintage catalogue all day.", "They were shooting the vintage catalogue all day.", "С местоимениями they / we / you используем were, а не was."]
+      ["I was steaming the gown when the light was breaking.", "I was steaming the gown when the light broke.", "Короткое событие, которое прервало процесс, — Past Simple."],
+      ["They was shooting all day.", "They were shooting all day.", "they / we / you → were."],
+      ["She was wanting a satin gown.", "She wanted a satin gown.", "want — глагол состояния, в Continuous его не ставят."]
     ]
   },
   g09: { title: "Сравнения: -er / more, as … as, too / enough", level: "A2" },
